@@ -2,7 +2,7 @@
 
 Michael Edwards, October 23rd 2023
 
-(Best viewed 'Raw' or in Emacs rather than in the web browser on github.com)
+(Best viewed 'Raw' on github.com, or in Emacs/MaxMSP)
 
 ** Usage
 
