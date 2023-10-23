@@ -1,5 +1,7 @@
 # -*- mode: org; mode: visual-line; -*-
 
+Michael Edwards, October 23rd 2023
+
 ** Usage
 
 hybrid-outputs offers a hybrid approach to outputting signals to loudspeakers
