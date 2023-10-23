@@ -636,7 +636,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-33",
@@ -1674,7 +1673,7 @@
 					"outlettype" : [ "multichannelsignal" ],
 					"patching_rect" : [ 883.0, 871.0, 120.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"active" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
+						"active" : [ 1, 1, 1, 1, 1, 1, 1, 1 ],
 						"center_att_db" : 6.0,
 						"center_curve" : 0.2,
 						"center_size" : 1.0,
@@ -1700,7 +1699,7 @@
 					"outlettype" : [ "multichannelsignal" ],
 					"patching_rect" : [ 1010.0, 1115.0, 127.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"active" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
+						"active" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 						"gain" : 1.0,
 						"interpolation" : 1,
 						"order" : 4,
@@ -1773,8 +1772,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 580.0, 133.5, 222.0, 22.0 ],
-					"text" : "mc.receive~ hybrid.output.sig @chans 8"
+					"patching_rect" : [ 580.0, 133.5, 228.0, 22.0 ],
+					"text" : "mc.receive~ hybrid.outputs.sig @chans 8"
 				}
 
 			}

@@ -1,5 +1,60 @@
 # -*- mode: org; mode: visual-line; -*-
 
+** Usage
+
+hybrid-outputs offers a hybrid approach to outputting signals to loudspeakers
+using MaxMSP. It is intended to be the last step in the chain before sending
+signals out of the sound card to the loudspeakers. As such it is not expected
+that gain changes are made with this patch during performance---though that
+would of course be possible va the live.gain~ interface objects---rather gains
+are controlled in another patch. This sums all signals and sends them to this
+patch via a multi-channel signal [mc.send~ hybrid.outputs.sig]. By default. This
+is eight channels, but this could be modified fairly easily.
+
+When I say fairly easily, though, I mean that the main patch here could be used
+as a template to create other mapping situations. It is not meant to provide a
+simple interface for mapping any number of imports to outputs. That may well be
+possible, but the limitations of some of these objects mean that their arguments
+need to be provided for channel I/O and these may need to be hard-code.
+
+There are two output methods on offer here:
+1. straightforward mapping of inputs to outputs via the matrix method, in which
+   arbitrary inputs can be mapped to any number of arbitrary outputs, controlled
+   by individual gains
+  - the inputs are represented by the columns in the matrix and the outputs by
+    rows
+  - the patch was developed for the main concert hall of the Folkwang University
+    of the Arts' /Neue Aula/, but it could easily be adapted to any other space
+    with an arbitrary number ofloud speakers
+2.  mapping of the inputs to the outputs via ambisonics panning.
+
+The Matrix object on the left of the main patch allows you to click on any input
+column and map to an output row. By holding the mouse and 'turning up' the dial
+you can easily control the output's gain. The current output's gain is displayed
+at the bottom of the matrix object.
+
+There is a preset object at the top of the matrix which allows you to store your
+settings. These are saved with the patch. The ambisonics interface objects on
+the right cannot be used with the preset object, but they have a separate
+mechanism for storing source and speaker positions. This is connected to the
+preset object so that saving of presets takes place transparently to the
+user. However, when loading the patch, sometimes you will get an error that
+speaker positions, for example, can't be found. Hopefully these have been saved
+however, and you can load them by clicking on the read button and selecting the
+respective XML file. Clicking then on the preset you wish to load should
+retrieve speaker and source positions.
+
+The channel-test sub-patch allows you to constantly send short pink noise bursts
+out of each channel consecutively, starting over from the beginning once you
+have reached the last channel. If you select /dac/ from the drop-down menu, then
+this will output the noise bursts to each of the speakers consecutively. If you
+select sources, then this will simulate the incoming channels with noise bursts
+instead. These are then processed and sent out of the speakers, using the matrix
+and ambisonics approaches simultaneously. Adjust the number of channels to
+output according to whether you are testing speakers or sources and don't forget
+to select /off/ from the menu when you are done, otherwise your performance
+could become quite annoying (unless pink noise bursts really float your boat).
+
 ** Speaker channel ordering (von Beschallung) October 2023
 01: Sub
 02: Center
@@ -74,8 +129,8 @@ See Begrundung below for an explanation.
 1   2 3 4  5  6 7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29
 
 ** Begrundung 
-- Lassen wir erstmals die Fills weg und wir haben 19.1. Als quasi-Atmos/Surround
-  wäre das 13.1.6
+- Lassen wir erstmals die Fills weg und wir haben 19.1
+- Als quasi-Atmos/Surround wäre das 13.1.6
   - 13 auf der "Hörerebene" (tja)
   - ein Sub/LFE
   - und 6 "Height".
@@ -83,63 +138,9 @@ See Begrundung below for an explanation.
   - L R C LFE Ls Rs
   - bitte lassen wir die mp4 Videos die mit C L R Ls Rs LFE herumlaufern
   - so wohl als ITU 775 und SMPTE Surround
-- Deswegen schlage ich das auch für unsere ersten 6 Kanäle vor
+- Deswegen schlage ich "film format" auch für unsere ersten 6 Kanäle vor
 - Zusätzliche Kanäle sind dann auch immer paarweise in der Reihenfolge
   Links-Rechts
   - zB 7.1.4 = L R C LFE Ls Rs L-Side (zw. L und Ls) R-Side dann "Height" L R Ls
     Rs.
 
-** Usage
-
-Hybrid outputs offers, a hybrid approach to outputting signals to loudspeakers.
-It is meant as the last step in the chain before sending signals out of the
-sound card to the loud speakers. As such it is not expected that game changes
-are made with this patch during performance, though that would of course be
-possible va the live.gain~ interface objects.  
-
-Rather gain is controlled in another patch which sums all signals and sends them
-to this patch via a multi-channel signal (mc.send~). By default. This is eight
-channels, but this could be modified fairly easily. 
-
-When I say fairly easily, though, I mean that the main patch here could be used
-as a template to create other mapping situations. It is not meant to provide a
-simple interface for mapping, any number of imports to outputs. That may well be
-possible, but the limitations of some of these objects means that object
-arguments need to be provided for numbers of input or output, and there is no
-easy way that I have discovered to change this via simple interface objects. 
-
-There are two methods on offer here: straightforward, mapping of inputs to
-outputs via the matrix method, in which arbitrary inputs can be mapped to any
-number of arbitrary outputs. These are controlled by games. The inputs are
-represented by the columns in the matrix and the outputs for the rose. I have
-developed this patch particularly for the main concert hall of the Folkwang
-University of the arts, but it could easily be adapted to any other space with
-any number of loud speakers. The second method is a mapping of the inputs to the
-outputs via ambisonics panning. 
-
-The Matrix object on the left of the main patch allows you to click on any input
-column and map to an output row. Bye holding the mouse and turning the dial up
-to a suitable game. 
-
-The current game is displayed at the bottom of this matrix object. There is
-preset object at the top of the matrix which allows you to store your
-settings. This is saved with the patch. The anti-sonics interface objects on the
-right cannot be used with the preset object, but they have a separate mechanism
-for storing source and speaker positions. This is connected to the preset object
-so that saving of precepts takes place transparently to the user. However, when
-loading the patch, sometimes you will get an error that speaker positions, for
-example, can't be found. Hopefully these have been saved and you can load them
-by clicking on the read button and loading the respective XML file. Clicking
-then, on the preset you wish to load above the matrix should load speaker and
-source positions. 
-
-The channel-test sub-patch at the bottom right allows you to constantly send
-short pink noise bursts out of each channel consecutively and starting over from
-the beginning once you have reached the last channel. If you select the deck
-from the drop-down menu, then this will output to each of the speakers
-consecutively. If you select sources, then this will simulate the incoming
-channels to then be processed and sent out of the speakers, using the matrix and
-anti-sonics approaches simultaneously. Adjust the number of channels to output
-according to whether your testing speakers or sources and don't forget to select
-off from the menu when you are done, otherwise your performance could become
-quite annoying. 
