@@ -2,6 +2,8 @@
 
 Michael Edwards, October 23rd 2023
 
+(Best viewed in Emacs rather than in the web browser on github.com)
+
 ** Usage
 
 hybrid-outputs offers a hybrid approach to outputting signals to loudspeakers
