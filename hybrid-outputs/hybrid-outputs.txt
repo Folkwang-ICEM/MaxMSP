@@ -1,0 +1,161 @@
+# -*- mode: org; mode: visual-line; -*-
+
+Michael Edwards, October 23rd 2023
+
+(Best viewed 'Raw' on github.com, or in Emacs/MaxMSP)
+
+** Usage
+hybrid-outputs offers a hybrid approach to outputting signals to loudspeakers
+using MaxMSP. It is intended to be the last step in the chain before sending
+signals out of the sound card to the loudspeakers. As such it is not expected
+that gain changes are made with this patch during performance---though that
+would of course be possible with the live.gain~ interface objects---rather gains
+are controlled in another patch. That patch should sum all signals and send them
+to this patch via a multi-channel signal [mc.send~ hybrid.outputs.sig]. By
+default this is eight channels, but this could be modified fairly easily. For
+example, hybrid-outputs.maxpat could be used as a template to create other
+mapping situations. Some of these already exist in the spaces folder, as
+examples or ready-to-go patches for performance/rehearsal spaces at the
+Folkwang/ICEM. But hybrid-outputs.maxpat is not meant to provide a simple
+interface for mapping any number of imports to outputs, rather as a starting point for a bespoke performances situation.
+
+*** Hybrid how?
+There are two output methods on offer here:
+1. straightforward mapping of inputs to outputs via the matrix method, in which
+   arbitrary inputs can be mapped to any number of arbitrary outputs, controlled
+   by individual gains
+  - the inputs are represented by the columns in the matrix and the outputs by
+    rows
+  - click on any input column and map to an output row. By holding the mouse and
+    'turning up' the dial you can easily control the output's gain. The current
+    output's gain is displayed at the bottom of the matrix object.
+  - the patch was initially developed for the main concert hall of the /Folkwang
+    University of the Arts' Neue Aula/, hence the channel numbers and names
+2.  mapping of the inputs to the outputs via ambisonics panning.
+
+
+*** Presets
+There is a preset object above the matrix which allows you to store your
+settings. These are saved with the patch. The ambisonics interface objects on
+the right cannot be used with the preset object, but they have a separate
+mechanism for storing source and speaker positions. This is connected to the
+preset object so that saving of presets takes place transparently to the
+user. However, when loading the patch, sometimes you will get an error that
+speaker positions, for example, can't be found. Hopefully these have been saved
+however, and you can load them by clicking on the read button and selecting the
+respective XML file. Clicking then on the preset you wish to load should
+retrieve speaker and source positions.
+
+If for some reason you lose your presets, you can grab a previous version of the
+patch from GitHub in which the presets are still intact, copy the preset object
+and in the broken version right-click on the preset object and select
+paste-replace.
+
+*** Testing
+The channel-test sub-patch allows you to constantly send short pink noise bursts
+out of each channel consecutively, starting over from the beginning once you
+have reached the last channel. If you select /dac/ from the drop-down menu, then
+this will output the noise bursts to each of the speakers consecutively. If you
+select sources, then this will simulate the incoming channels with noise bursts
+instead. These are then processed and sent out of the speakers, using the matrix
+and ambisonics approaches simultaneously. Adjust the number of channels to
+output according to whether you are testing speakers or sources and don't forget
+to select /off/ from the menu when you are done, otherwise your performance
+could become quite annoying (unless pink noise bursts really float your boat).
+
+** Folkwang specific speaker channel ordering (von Beschallung) October 2023
+01: Sub
+02: Center
+03: Frontfill LL
+04: Frontfill L
+05: Frontfill C
+06: Frontfill R
+07: Frontfill RR
+08: Seite Links Vorn
+09: Seite Links Mitte
+10: Seite Links Hinten
+11: Decke Links Vorn
+12: Decke Links Mitte
+13: Decke Links Hinten
+14: Seite Rechts Vorn
+15: Seite Rechts Mitte
+16: Seite Rechts Hinten
+17: Decke Rechts Vorn
+18: Decke Rechts Mitte
+19: Decke Rechts Hinten
+20: Hinten L
+21: Hinten R
+22: Empore LL
+23: Empore L
+24: Empore R
+25: Empore RR
+26: Vida Vorne L
+27: Vida Vorne R
+28: Vida Hinten R
+29: Vida Hinten L
+
+** My ordering:
+
+See /Begrundung/ below for an explanation.
+
+01: Vida Vorne L
+02: Vida Vorne R
+03: Center
+04: Sub
+05: Vida Hinten L
+06: Vida Hinten R
+
+07: Seite Links Vorn
+08: Seite Rechts Vorn
+09: Seite Links Hinten
+10: Seite Rechts Hinten
+11: Seite Links Mitte
+12: Seite Rechts Mitte
+
+13: Decke Links Vorn
+14: Decke Rechts Vorn
+15: Decke Links Hinten
+16: Decke Rechts Hinten
+17: Decke Links Mitte
+18: Decke Rechts Mitte
+
+19: Hinten L
+20: Hinten R
+
+21: Frontfill LL
+22: Frontfill L
+23: Frontfill C
+24: Frontfill R
+25: Frontfill RR
+26: Empore LL
+27: Empore L
+28: Empore R
+29: Empore RR
+
+** order for dac from 'my ordering' is:
+26 27 2 1 29 28 8 14 10 16 9  15 11 17 13 19 12 18 20 21  3  4  5  6  7 22 23 24 25
+1   2 3 4  5  6 7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29
+
+** CPU Hit
+- Using all 29 speakers of the Neue Aula, this patch is a considerable CPU Hog
+  - running just this patch with the matrix and 4th order ambisonics on a Mac
+    Studio M1 Max takes c. 20% CPU
+- it's the ambisonics externals that are hungry
+- dropping the number of speaker outputs to 5 results in c. 10% less CPU usage
+- alternatively use the IEM VST to do the decoding. See spaces/neue-aula-iem for an example 
+** Begrundung 
+- Lassen wir erstmals die Fills weg und wir haben 19.1
+- Als quasi-Atmos/Surround wäre das 13.1.6
+  - 13 auf der "Hörerebene" (tja)
+  - ein Sub/LFE
+  - und 6 "Height".
+- Die Atmos Reihenfolgen, die ich sehe, folgen erstmal 5.1 "film format"
+  - L R C LFE Ls Rs
+  - bitte lassen wir die mp4 Videos die mit C L R Ls Rs LFE herumlaufern
+  - so wohl als ITU 775 und SMPTE Surround
+- Deswegen schlage ich "film format" auch für unsere ersten 6 Kanäle vor
+- Zusätzliche Kanäle sind dann auch immer paarweise in der Reihenfolge
+  Links-Rechts
+  - zB 7.1.4 = L R C LFE Ls Rs L-Side (zw. L und Ls) R-Side dann "Height" L R Ls
+    Rs.
+

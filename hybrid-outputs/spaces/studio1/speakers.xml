@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><ambiscore>
+	<snapshot index="1">
+		<point>
+			<number>13</number>
+			<xyz>-0.383602 0.923498 0.000000</xyz>
+		</point>
+		<point>
+			<number>14</number>
+			<xyz>0.383602 0.923498 0.000000</xyz>
+		</point>
+		<point>
+			<number>15</number>
+			<xyz>0.923498 0.383602 0.000000</xyz>
+		</point>
+		<point>
+			<number>16</number>
+			<xyz>0.923498 -0.383602 0.000000</xyz>
+		</point>
+		<point>
+			<number>17</number>
+			<xyz>0.383602 -0.923498 0.000000</xyz>
+		</point>
+		<point>
+			<number>18</number>
+			<xyz>-0.383602 -0.923498 0.000000</xyz>
+		</point>
+		<point>
+			<number>19</number>
+			<xyz>-0.923498 -0.383602 0.000000</xyz>
+		</point>
+		<point>
+			<number>20</number>
+			<xyz>-0.923498 0.383602 0.000000</xyz>
+		</point>
+		<point>
+			<number>5</number>
+			<xyz>0.000000 0.907191 0.420719</xyz>
+		</point>
+		<point>
+			<number>6</number>
+			<xyz>0.897174 0.000000 0.441678</xyz>
+		</point>
+		<point>
+			<number>7</number>
+			<xyz>0.000000 -0.907191 0.420719</xyz>
+		</point>
+		<point>
+			<number>8</number>
+			<xyz>-0.897174 0.000000 0.441678</xyz>
+		</point>
+		<point>
+			<number>9</number>
+			<xyz>-0.512151 0.384115 0.768216</xyz>
+		</point>
+		<point>
+			<number>10</number>
+			<xyz>0.512151 0.384115 0.768216</xyz>
+		</point>
+		<point>
+			<number>11</number>
+			<xyz>0.512151 -0.384115 0.768216</xyz>
+		</point>
+		<point>
+			<number>12</number>
+			<xyz>-0.512151 -0.384115 0.768216</xyz>
+		</point>
+	</snapshot>
+	<snapshot index="2">
+		<point>
+			<number>13</number>
+			<xyz>-0.383602 0.923498 0.000000</xyz>
+		</point>
+		<point>
+			<number>14</number>
+			<xyz>0.383602 0.923498 0.000000</xyz>
+		</point>
+		<point>
+			<number>15</number>
+			<xyz>0.923498 0.383602 0.000000</xyz>
+		</point>
+		<point>
+			<number>16</number>
+			<xyz>0.923498 -0.383602 0.000000</xyz>
+		</point>
+		<point>
+			<number>17</number>
+			<xyz>0.383602 -0.923498 0.000000</xyz>
+		</point>
+		<point>
+			<number>18</number>
+			<xyz>-0.383602 -0.923498 0.000000</xyz>
+		</point>
+		<point>
+			<number>19</number>
+			<xyz>-0.923498 -0.383602 0.000000</xyz>
+		</point>
+		<point>
+			<number>20</number>
+			<xyz>-0.923498 0.383602 0.000000</xyz>
+		</point>
+		<point>
+			<number>5</number>
+			<xyz>0.000000 0.907191 0.420719</xyz>
+		</point>
+		<point>
+			<number>6</number>
+			<xyz>0.897174 0.000000 0.441678</xyz>
+		</point>
+		<point>
+			<number>7</number>
+			<xyz>0.000000 -0.907191 0.420719</xyz>
+		</point>
+		<point>
+			<number>8</number>
+			<xyz>-0.897174 0.000000 0.441678</xyz>
+		</point>
+		<point>
+			<number>9</number>
+			<xyz>-0.512151 0.384115 0.768216</xyz>
+		</point>
+		<point>
+			<number>10</number>
+			<xyz>0.512151 0.384115 0.768216</xyz>
+		</point>
+		<point>
+			<number>11</number>
+			<xyz>0.512151 -0.384115 0.768216</xyz>
+		</point>
+		<point>
+			<number>12</number>
+			<xyz>-0.512151 -0.384115 0.768216</xyz>
+		</point>
+	</snapshot>
+</ambiscore>

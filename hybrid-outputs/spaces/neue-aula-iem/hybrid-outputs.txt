@@ -37,6 +37,7 @@ column and map to an output row. By holding the mouse and 'turning up' the dial
 you can easily control the output's gain. The current output's gain is displayed
 at the bottom of the matrix object.
 
+*** Presets
 There is a preset object at the top of the matrix which allows you to store your
 settings. These are saved with the patch. The ambisonics interface objects on
 the right cannot be used with the preset object, but they have a separate
@@ -48,6 +49,12 @@ however, and you can load them by clicking on the read button and selecting the
 respective XML file. Clicking then on the preset you wish to load should
 retrieve speaker and source positions.
 
+If for some reason you lose your presets, you can grab a previous version of the
+patch from GitHub in which the presets are still intact, copy the preset object
+and in the broken version right-click on the preset object and select
+paste-replace.
+
+*** Testing
 The channel-test sub-patch allows you to constantly send short pink noise bursts
 out of each channel consecutively, starting over from the beginning once you
 have reached the last channel. If you select /dac/ from the drop-down menu, then
@@ -132,6 +139,12 @@ See Begrundung below for an explanation.
 26 27 2 1 29 28 8 14 10 16 9  15 11 17 13 19 12 18 20 21  3  4  5  6  7 22 23 24 25
 1   2 3 4  5  6 7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29
 
+** CPU Hit
+- Using all 29 speakers of the Neue Aula, this patch is a considerable CPU Hog
+  - running just this patch with the matrix and 4th order ambisonics on a Mac
+    Studio M1 Max takes c. 20% CPU
+- it's the ambisonics externals that are hungry
+- dropping the number of speaker outputs to 5 results in c. 10% less CPU usage
 ** Begrundung 
 - Lassen wir erstmals die Fills weg und wir haben 19.1
 - Als quasi-Atmos/Surround wäre das 13.1.6
