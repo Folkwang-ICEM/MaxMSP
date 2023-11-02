@@ -1,5 +1,39 @@
 *.rpp-PROX
 *.pkf
 *.reapeaks
-.DS_Store
 *.sadexport
+
+################################################################################
+## .gitignore
+## Created: 2023-11-01, Ruben Philipp
+
+################################################################################
+## Emacs
+
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+
+################################################################################
+## MacOS
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# NB: Requires two trailing newlines
+Icon
+
+
+._*
+
+
+################################################################################
+## EOF .gitignore
+
