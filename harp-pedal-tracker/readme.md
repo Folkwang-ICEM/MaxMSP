@@ -1,7 +1,7 @@
 # Harp Pedal Tracker
 
-This very simple Max project implements a siple version of Stanley
-Chaloupka's[^2] harp pedal tracker, aiming at facilityting writing for harp.
+This very simple Max project implements a simple version of Stanley
+Chaloupka's[^1] harp pedal tracker, aiming at facilityting writing for harp.
 
 ## Usage
 
