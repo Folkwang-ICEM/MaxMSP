@@ -16,9 +16,9 @@ In order to use the pedalings with `harp.lisp`, copy the "Salzedo-List" from the
 patch and use it in your Lisp-program. 
 
 
-# Colophon
+# Author
 
-Written by Ruben Philipp <ruben.philipp@folkwang-uni.de>
+Ruben Philipp (<ruben.philipp@folkwang-uni.de>).
 
 # Footnotes
 
