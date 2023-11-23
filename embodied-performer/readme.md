@@ -1,3 +1,5 @@
+# embodied performer
+
 This is a simple approach to avoiding the disembodied performer problem when
 musicians onstage are amplified and the direct signal reaches the listener at
 the same time as the amplified signal from the loudspeaker. Of course this is a
@@ -14,4 +16,5 @@ ears after the amplified signal.
 This is of course a very specific situation but the stereo-delay-meters patch
 could be used as the basis of many other loudspeaker arrangements.
 
+# Author
 Michael Edwards, 2016
