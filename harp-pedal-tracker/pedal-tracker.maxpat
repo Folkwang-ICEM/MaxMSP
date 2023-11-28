@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 193.0, -993.0, 717.0, 431.0 ],
+		"rect" : [ 193.0, 66.0, 707.0, 428.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,19 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"bubble" : 1,
+					"id" : "obj-44",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1006.5, 309.5, 210.0, 64.0 ],
+					"text" : "these values could be used e.g. in  \"subset-from-harp-salzedo\" or \"harp-salzedo-to-tl-set\" within slippery chicken"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-102",
 					"maxclass" : "comment",
@@ -90,7 +103,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 780.0, 81.5, 150.0, 33.0 ],
+					"patching_rect" : [ 780.0, 81.5, 151.0, 33.0 ],
 					"text" : "Select preset with 1-9 and 0 (which is 10)"
 				}
 
@@ -653,7 +666,7 @@
 					"fontname" : "Arial",
 					"fontsize" : 13.0,
 					"id" : "obj-49",
-					"items" : [ "AU DLS Synth 1", ",", "IAC-Treiber Bus 1", ",", "UltraLite AVB MIDI Out", ",", "Nord Stage 3 MIDI Input", ",", "VMini In", ",", "VMini EDITOR In", ",", "from Max 1", ",", "from Max 2" ],
+					"items" : [ "AU DLS Synth 1", ",", "IAC-Treiber Bus 1", ",", "from Max 1", ",", "from Max 2" ],
 					"labelclick" : 1,
 					"maxclass" : "umenu",
 					"numinlets" : 1,
@@ -904,13 +917,15 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-28",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 874.0, 325.0, 150.0, 20.0 ],
+					"patching_rect" : [ 874.0, 325.0, 123.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 267.5, 314.960000000000036, 151.0, 20.0 ],
-					"text" : "Salzedo-List (cf. harp.lisp)"
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 267.5, 309.460000000000036, 151.0, 33.0 ],
+					"text" : "Salzedo-List (e.g. for slippery-chicken)"
 				}
 
 			}
@@ -1422,7 +1437,6 @@
 			}
 , 			{
 				"box" : 				{
-					"autorestore" : "pedals1.json",
 					"id" : "obj-13",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -2481,21 +2495,14 @@
 		"dependency_cache" : [ 			{
 				"name" : "int-to-dorsym.maxpat",
 				"bootpath" : "~/Music/topographie-1/tools/pedal-tracker",
-				"patcherrelativepath" : ".",
+				"patcherrelativepath" : "../Music/topographie-1/tools/pedal-tracker",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "pedal.maxpat",
 				"bootpath" : "~/Music/topographie-1/tools/pedal-tracker",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "pedals1.json",
-				"bootpath" : "~/Music/topographie-1/harp",
-				"patcherrelativepath" : "../../harp",
+				"patcherrelativepath" : "../Music/topographie-1/tools/pedal-tracker",
 				"type" : "JSON",
 				"implicit" : 1
 			}
