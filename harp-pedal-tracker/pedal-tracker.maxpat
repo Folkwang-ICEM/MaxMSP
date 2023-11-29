@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 193.0, 66.0, 707.0, 428.0 ],
+		"rect" : [ 193.0, 66.0, 714.0, 444.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -46,7 +46,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1006.5, 309.5, 210.0, 64.0 ],
+					"patching_rect" : [ 1006.5, 309.5, 214.0, 64.0 ],
 					"text" : "these values could be used e.g. in  \"subset-from-harp-salzedo\" or \"harp-salzedo-to-tl-set\" within slippery chicken"
 				}
 
@@ -1579,8 +1579,8 @@
 					"numinlets" : 7,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 45.0, 380.0, 248.199999999999989, 22.0 ],
-					"text" : "pak sym sym sym sym sym sym sym"
+					"patching_rect" : [ 45.0, 380.0, 244.564102411270142, 22.0 ],
+					"text" : "pak D4 C4 B4 E4 F4 G4 A4"
 				}
 
 			}
@@ -2377,7 +2377,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
-					"midpoints" : [ 54.5, 197.0, 54.5, 197.0 ],
+					"midpoints" : [ 54.5, 195.0, 54.5, 195.0 ],
 					"order" : 1,
 					"source" : [ "obj-91", 0 ]
 				}
@@ -2386,7 +2386,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-8", 1 ],
-					"midpoints" : [ 89.5, 165.0, 96.0, 165.0, 96.0, 366.0, 92.699999999999989, 366.0 ],
+					"midpoints" : [ 89.5, 165.0, 96.0, 165.0, 96.0, 366.0, 92.094017068545014, 366.0 ],
 					"order" : 1,
 					"source" : [ "obj-94", 0 ]
 				}
@@ -2413,7 +2413,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-8", 2 ],
-					"midpoints" : [ 124.5, 366.0, 130.899999999999977, 366.0 ],
+					"midpoints" : [ 124.5, 366.0, 129.688034137090028, 366.0 ],
 					"order" : 1,
 					"source" : [ "obj-95", 0 ]
 				}
@@ -2431,7 +2431,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-8", 3 ],
-					"midpoints" : [ 175.5, 366.0, 169.099999999999966, 366.0 ],
+					"midpoints" : [ 175.5, 366.0, 167.282051205635071, 366.0 ],
 					"order" : 1,
 					"source" : [ "obj-96", 0 ]
 				}
@@ -2449,7 +2449,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-8", 4 ],
-					"midpoints" : [ 210.5, 375.0, 207.299999999999983, 375.0 ],
+					"midpoints" : [ 210.5, 366.0, 204.876068274180085, 366.0 ],
 					"order" : 1,
 					"source" : [ "obj-97", 0 ]
 				}
@@ -2467,7 +2467,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-8", 5 ],
-					"midpoints" : [ 245.5, 165.0, 252.0, 165.0, 252.0, 366.0, 245.5, 366.0 ],
+					"midpoints" : [ 245.5, 165.0, 252.0, 165.0, 252.0, 366.0, 242.470085342725127, 366.0 ],
 					"order" : 1,
 					"source" : [ "obj-98", 0 ]
 				}
@@ -2485,7 +2485,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-8", 6 ],
-					"midpoints" : [ 280.5, 375.0, 283.699999999999932, 375.0 ],
+					"midpoints" : [ 280.5, 195.0, 280.064102411270142, 195.0 ],
 					"order" : 1,
 					"source" : [ "obj-99", 0 ]
 				}
@@ -2494,15 +2494,15 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "int-to-dorsym.maxpat",
-				"bootpath" : "~/Music/topographie-1/tools/pedal-tracker",
-				"patcherrelativepath" : "../Music/topographie-1/tools/pedal-tracker",
+				"bootpath" : "~/code/icem/MaxMSP/harp-pedal-tracker",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "pedal.maxpat",
-				"bootpath" : "~/Music/topographie-1/tools/pedal-tracker",
-				"patcherrelativepath" : "../Music/topographie-1/tools/pedal-tracker",
+				"bootpath" : "~/code/icem/MaxMSP/harp-pedal-tracker",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
