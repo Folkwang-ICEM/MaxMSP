@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 87.0, 100.0, 716.0, 433.0 ],
+		"rect" : [ 87.0, 100.0, 706.0, 438.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,32 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-59",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 7,
+					"outlettype" : [ "int", "int", "int", "int", "int", "int", "int" ],
+					"patching_rect" : [ 304.0, 55.0, 82.0, 22.0 ],
+					"text" : "t 0 0 0 0 0 0 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-58",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 304.0, 22.0, 35.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 289.0, 33.0, 35.0, 22.0 ],
+					"text" : "reset"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-86",
 					"maxclass" : "newobj",
@@ -572,7 +598,6 @@
 					"patching_rect" : [ 964.0, 434.0, 100.0, 50.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 499.0, 353.0, 185.0, 50.0 ],
-					"text" : "Cmaj",
 					"varname" : "pedal-comment"
 				}
 
@@ -1437,7 +1462,7 @@
 					"patching_rect" : [ 761.0, 292.0, 104.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 151.0, 314.960000000000036, 109.0, 22.0 ],
-					"text" : "(-1 0 0 0 1 -1 -1)"
+					"text" : "(0 0 0 0 0 0 0)"
 				}
 
 			}
@@ -1837,7 +1862,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 499.0, 314.960000000000036, 58.0, 22.0 ],
 					"readonly" : 1,
-					"text" : "^--|-v^^"
+					"text" : "---|----"
 				}
 
 			}
@@ -1904,14 +1929,14 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 964.0, 25.0, 56.0, 22.0 ],
 					"restore" : 					{
-						"ped-a" : [ -1 ],
+						"ped-a" : [ 0 ],
 						"ped-b" : [ 0 ],
 						"ped-c" : [ 0 ],
-						"ped-d" : [ -1 ],
+						"ped-d" : [ 0 ],
 						"ped-e" : [ 0 ],
-						"ped-f" : [ 1 ],
-						"ped-g" : [ -1 ],
-						"pedal-comment" : [ "Cmaj" ]
+						"ped-f" : [ 0 ],
+						"ped-g" : [ 0 ],
+						"pedal-comment" : [ "" ]
 					}
 ,
 					"text" : "autopattr",
@@ -2739,6 +2764,62 @@
 				"patchline" : 				{
 					"destination" : [ "obj-76", 0 ],
 					"source" : [ "obj-57", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-59", 0 ],
+					"source" : [ "obj-58", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"source" : [ "obj-59", 6 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"source" : [ "obj-59", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"source" : [ "obj-59", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"source" : [ "obj-59", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-59", 5 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"source" : [ "obj-59", 4 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"source" : [ "obj-59", 3 ]
 				}
 
 			}
