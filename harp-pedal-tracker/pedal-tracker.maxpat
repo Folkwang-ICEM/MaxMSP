@@ -1801,13 +1801,15 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-37",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 569.0, 294.0, 150.0, 20.0 ],
+					"patching_rect" : [ 569.0, 294.0, 150.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 561.5, 315.960000000000036, 123.0, 20.0 ],
-					"text" : "Dorico Salzedo mark"
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 561.5, 309.460000000000036, 123.0, 33.0 ],
+					"text" : "Dorico Salzedo mark\n(read only)"
 				}
 
 			}
