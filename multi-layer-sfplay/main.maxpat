@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 255.0, 203.0, 703.0, 576.0 ],
+		"rect" : [ 255.0, 203.0, 705.0, 578.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -916,8 +916,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 963.33333333333303, 639.5, 54.0, 22.0 ],
-					"text" : "pack 0 0"
+					"patching_rect" : [ 963.33333333333303, 639.5, 61.0, 22.0 ],
+					"text" : "pack 0. 0."
 				}
 
 			}
@@ -1202,7 +1202,7 @@
 					"fontname" : "Arial",
 					"fontsize" : 13.0,
 					"id" : "obj-48",
-					"items" : [ "AU DLS Synth 1", ",", "IAC-Treiber Bus 1", ",", "Digiface Dante (24168879) Port 1", ",", "from Max 1", ",", "from Max 2" ],
+					"items" : [ "AU DLS Synth 1", ",", "IAC-Treiber Bus 1", ",", "from Max 1", ",", "from Max 2" ],
 					"labelclick" : 1,
 					"maxclass" : "umenu",
 					"numinlets" : 1,
@@ -1246,7 +1246,7 @@
 					"fontname" : "Arial",
 					"fontsize" : 13.0,
 					"id" : "obj-2",
-					"items" : [ "IAC-Treiber Bus 1", ",", "Digiface Dante (24168879) Port 1", ",", "to Max 1", ",", "to Max 2" ],
+					"items" : [ "IAC-Treiber Bus 1", ",", "to Max 1", ",", "to Max 2" ],
 					"labelclick" : 1,
 					"maxclass" : "umenu",
 					"numinlets" : 1,
@@ -3160,7 +3160,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-61", 1 ],
-					"midpoints" : [ 1007.83333333333303, 636.0, 1007.83333333333303, 636.0 ],
+					"midpoints" : [ 1007.83333333333303, 636.0, 1014.83333333333303, 636.0 ],
 					"source" : [ "obj-101", 1 ]
 				}
 
@@ -4152,49 +4152,49 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "cues.txt",
-				"bootpath" : "~/code/steinke-elektronik23",
+				"bootpath" : "~/code/multi-layer-sfplay",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "relative-path.maxpat",
-				"bootpath" : "~/code/steinke-elektronik23",
+				"bootpath" : "~/code/multi-layer-sfplay",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "scale-from-xtouch.maxpat",
-				"bootpath" : "~/code/steinke-elektronik23",
+				"bootpath" : "~/code/multi-layer-sfplay",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "scale-to-xtouch.maxpat",
-				"bootpath" : "~/code/steinke-elektronik23",
+				"bootpath" : "~/code/multi-layer-sfplay",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sflist-init.maxpat",
-				"bootpath" : "~/code/steinke-elektronik23",
+				"bootpath" : "~/code/multi-layer-sfplay",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sndfiles.txt",
-				"bootpath" : "~/code/steinke-elektronik23",
+				"bootpath" : "~/code/multi-layer-sfplay",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "stereo-mixdown.maxpat",
-				"bootpath" : "~/code/steinke-elektronik23",
+				"bootpath" : "~/code/multi-layer-sfplay",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
