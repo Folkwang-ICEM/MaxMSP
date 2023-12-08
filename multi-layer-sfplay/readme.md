@@ -1,6 +1,6 @@
 # Readme
 
-## Usage
+## Description
 
 This program aims at facilitating multichannel soundfile-playback in the 
 context of instrumental music performances.  In the current form, it provides
@@ -23,6 +23,13 @@ generate the two cue files (see above) for setups with more than two
 sfplay~/sflist~-instances, make sure to change the respective variables either
 in `cuemaker.lisp` or `cuemaker.js` (which is the script that does the actual
 data conversion). 
+
+## Usage
+
+- For creating cue-list data, use either `cuemaker.lisp` or `cuemaker.maxpat`
+  (see above).
+- To run the patch, open (and possibly modify) `main.maxpat`. Make sure to
+  place all soundfiles in the respective directory (by default `sndfiles/`).
 
 ## Author
 

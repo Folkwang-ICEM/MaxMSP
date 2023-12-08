@@ -15,29 +15,30 @@
 ;;; CREATED
 ;;; 2023-12-06
 ;;;
-;;; $$ Last modified:  22:32:04 Fri Dec  8 2023 CET
+;;; $$ Last modified:  22:45:49 Fri Dec  8 2023 CET
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; ARGUMENTS:
 ;;; - cues:
-;;;   a list of lists with the cues-id, either nil (for automatically
-;;;   selecting the next buffer) or a cue-id, and a sndfile (when
-;;;   string) or a cue-id (when int / symbol). when 3rd is cue-id, it
-;;;   will send a stop-playback message to the buffer allocated in the
-;;;   cue under cue-id.
-;;;   NB: cue-ids must be unique
+;;;   A list of lists with the cues-id, either nil (for automatically
+;;;   selecting the next buffer) or a cue-id, and -- if the 2nd element is
+;;;   nil -- a sndfile (string), otherwise the last item can be omitted.
+;;;   When the 2nd is cue-id, s stop-playback message will be sent to the
+;;;   buffer allocated in the cue under the cue-id given in the 2nd item of
+;;;   the (sub-)list (see example). 
+;;;   NB: cue-ids must be unique and should be ascending. 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; EXAMPLE:
 #|
 (make-cue-files '((1 NIL "gs-cue-01.wav")
                   (2 NIL "gs-cue-02.wav")
-                  (3 NIL "gs-cue-03.wav")
+                  (3 2) ;; stops playback of cue 2
                   (4 NIL "gs-cue-04.wav")
                   (5 NIL "gs-cue-05.wav")
                   (6 NIL "gs-cue-06.wav")
                   (7 NIL "gs-cue-07.wav")
-(8 NIL "gs-cue-08.wav")))
+                  (8 NIL "gs-cue-08.wav")))
 |#
 (defun make-cue-files (cues &key
                             ;;; the directory relative to the MaxMSP
