@@ -1390,8 +1390,8 @@
 					"id" : "obj-106",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 469.0, 993.0, 55.0, 22.0 ],
 					"text" : "arpeggio"
 				}
@@ -2066,7 +2066,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 441.0, 109.0, 268.0, 20.0 ],
-									"presentation_linecount" : 2,
 									"text" : "shift+[1-9 ]= store 1-9; shift+0 = store 10"
 								}
 
@@ -3229,7 +3228,7 @@
 					"patching_rect" : [ 761.0, 292.0, 104.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 151.0, 314.960000000000036, 109.0, 22.0 ],
-					"text" : "(0 0 0 0 0 0 0)"
+					"text" : "(1 -1 1 1 1 1 -1)"
 				}
 
 			}
@@ -3629,7 +3628,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 499.0, 314.960000000000036, 58.0, 22.0 ],
 					"readonly" : 1,
-					"text" : "---|----"
+					"text" : "v^v|vvv^"
 				}
 
 			}
@@ -3684,13 +3683,13 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 964.0, 25.0, 56.0, 22.0 ],
 					"restore" : 					{
-						"ped-a" : [ 0 ],
-						"ped-b" : [ 0 ],
-						"ped-c" : [ 0 ],
-						"ped-d" : [ 0 ],
-						"ped-e" : [ 0 ],
-						"ped-f" : [ 0 ],
-						"ped-g" : [ 0 ],
+						"ped-a" : [ -1 ],
+						"ped-b" : [ 1 ],
+						"ped-c" : [ -1 ],
+						"ped-d" : [ 1 ],
+						"ped-e" : [ 1 ],
+						"ped-f" : [ 1 ],
+						"ped-g" : [ 1 ],
 						"pedal-comment" : [ "" ]
 					}
 ,
@@ -4268,6 +4267,14 @@
 					"destination" : [ "obj-41", 0 ],
 					"midpoints" : [ 478.5, 1017.0, 105.0, 1017.0, 105.0, 894.0, 54.5, 894.0 ],
 					"source" : [ "obj-106", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-62", 0 ],
+					"midpoints" : [ 514.5, 1026.0, 288.0, 1026.0, 288.0, 903.0, 245.5, 903.0 ],
+					"source" : [ "obj-106", 1 ]
 				}
 
 			}
