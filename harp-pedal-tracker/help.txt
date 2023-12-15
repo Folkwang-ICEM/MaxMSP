@@ -1,0 +1,24 @@
+--------
+| HELP |
+--------
+
+------------
+-SHORTCUTS:-
+------------
+
+[1-0]                   recall preset [1-10]
+S-[1-0]                 store preset [1-10]
+SPACE                   play (either chord or arpeggio)
+S-p                     toggle chord/arpeggio
+opt-[a|s|d|f|g|h|j]     cycle through pedal positions
+a|s|d|f|g|h|j           increment pedal position
+S-[a|s|d|f|g|h|j]       decrement pedal position
+r                       reset all harp pedal positions
+
+------------
+
+S       = shift
+opt     = option
+
+NB: These shortcuts refer to a German (QWERTZ) Macintosh
+    keyboard layout.
