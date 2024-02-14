@@ -18,6 +18,10 @@ The pedal-list could be further used in *slippery chicken*, e.g. with
 In order to use the pedalings with `harp.lisp`, copy the "Salzedo-List" from the
 patch and use it in your Lisp-program. 
 
+## Dependencies
+
+- [shell](https://github.com/jeremybernstein/shell)
+
 
 # Author
 
