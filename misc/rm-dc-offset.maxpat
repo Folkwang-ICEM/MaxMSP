@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 6,
+			"minor" : 6,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 87.0, 259.0, 241.0 ],
+		"rect" : [ 1002.0, 248.0, 439.0, 293.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,11 +40,23 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-9",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 174.0, 15.0, 250.0, 60.0 ],
+					"text" : "many thanks, kudos, and credit to the unknown person who originated this formula years back on some discussion board or backstage concert long since forgotten"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-7",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 3.0, 211.0, 246.0, 20.0 ],
+					"patching_rect" : [ 3.0, 226.0, 246.0, 20.0 ],
 					"text" : "michael edwards ~ m@michael-edwards.org"
 				}
 
@@ -58,7 +70,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 3.0, 0.0, 150.0, 33.0 ],
+					"patching_rect" : [ 3.0, 15.0, 150.0, 33.0 ],
 					"text" : "removes DC offset from a mono signal"
 				}
 
@@ -71,7 +83,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 61.0, 166.0, 62.0, 20.0 ],
+					"patching_rect" : [ 61.0, 181.0, 62.0, 20.0 ],
 					"text" : "signal out"
 				}
 
@@ -84,7 +96,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 60.0, 47.0, 55.0, 20.0 ],
+					"patching_rect" : [ 60.0, 62.0, 55.0, 20.0 ],
 					"text" : "signal in"
 				}
 
@@ -97,7 +109,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 24.0, 164.0, 25.0, 25.0 ]
+					"patching_rect" : [ 24.0, 179.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -110,7 +122,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 24.0, 45.0, 25.0, 25.0 ]
+					"patching_rect" : [ 24.0, 60.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -123,7 +135,7 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 24.0, 108.0, 152.0, 22.0 ],
+					"patching_rect" : [ 24.0, 123.0, 152.0, 22.0 ],
 					"text" : "biquad~ 1. -1. 0. -0.9997 0"
 				}
 
@@ -144,7 +156,6 @@
 
 			}
  ],
-		"dependency_cache" : [  ],
 		"autosave" : 0
 	}
 
