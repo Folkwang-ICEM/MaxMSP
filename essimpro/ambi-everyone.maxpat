@@ -100,8 +100,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1184.0, 417.0, 222.0, 22.0 ],
-					"text" : "read ambi-everyone-multiencoder-dante"
+					"patching_rect" : [ 1184.0, 417.0, 225.0, 22.0 ],
+					"text" : "read .ambi-everyone-multiencoder-dante"
 				}
 
 			}
@@ -112,8 +112,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1182.0, 454.0, 223.0, 22.0 ],
-					"text" : "write ambi-everyone-multiencoder-dante"
+					"patching_rect" : [ 1182.0, 454.0, 227.0, 22.0 ],
+					"text" : "write .ambi-everyone-multiencoder-dante"
 				}
 
 			}
@@ -124,8 +124,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 891.0, 419.0, 215.0, 22.0 ],
-					"text" : "read ambi-everyone-multiencoder-mde"
+					"patching_rect" : [ 891.0, 419.0, 219.0, 22.0 ],
+					"text" : "read .ambi-everyone-multiencoder-mde"
 				}
 
 			}
@@ -136,8 +136,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 890.0, 455.0, 217.0, 22.0 ],
-					"text" : "write ambi-everyone-multiencoder-mde"
+					"patching_rect" : [ 890.0, 455.0, 220.0, 22.0 ],
+					"text" : "write .ambi-everyone-multiencoder-mde"
 				}
 
 			}
@@ -148,8 +148,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 587.0, 432.0, 237.0, 22.0 ],
-					"text" : "read ambi-everyone-multiencoder-focusrite"
+					"patching_rect" : [ 587.0, 432.0, 241.0, 22.0 ],
+					"text" : "read .ambi-everyone-multiencoder-focusrite"
 				}
 
 			}
@@ -160,8 +160,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 586.0, 469.0, 239.0, 22.0 ],
-					"text" : "write ambi-everyone-multiencoder-focusrite"
+					"patching_rect" : [ 586.0, 469.0, 242.0, 22.0 ],
+					"text" : "write .ambi-everyone-multiencoder-focusrite"
 				}
 
 			}
@@ -172,8 +172,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 182.0, 425.0, 238.0, 22.0 ],
-					"text" : "read ambi-everyone-multiencoder-andiamo"
+					"patching_rect" : [ 182.0, 425.0, 241.0, 22.0 ],
+					"text" : "read .ambi-everyone-multiencoder-andiamo"
 				}
 
 			}
@@ -184,8 +184,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 181.0, 461.0, 239.0, 22.0 ],
-					"text" : "write ambi-everyone-multiencoder-andiamo"
+					"patching_rect" : [ 181.0, 461.0, 243.0, 22.0 ],
+					"text" : "write .ambi-everyone-multiencoder-andiamo"
 				}
 
 			}
@@ -326,7 +326,7 @@
 
 							}
  ],
-						"originid" : "pat-18"
+						"originid" : "pat-16"
 					}
 ,
 					"patching_rect" : [ 154.0, 615.0, 39.0, 22.0 ],
@@ -2033,7 +2033,7 @@
 
 			}
  ],
-		"originid" : "pat-16",
+		"originid" : "pat-14",
 		"parameters" : 		{
 			"obj-10" : [ "mcs.vst~[1]", "mcs.vst~[1]", 0 ],
 			"obj-2" : [ "mc.live.gain~[1]", "mc.live.gain~[1]", 0 ],
