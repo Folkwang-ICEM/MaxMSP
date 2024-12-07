@@ -913,8 +913,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 7.0, 31.0, 524.0, 114.0 ],
-					"text" : "The main idea: People use Dante directly, go analogue into the ADCs of the Andiamo, or use the Focusrite Dante preamps. All of these are routed in Dante Controller to my machine (if using my improv patch there) or another machine (if routing my improv outputs to that via Dante). \n\nDante inputs on the routing machine are as follows: 1-32: Andiamo; 33-40: Preamps; 41-48: Dante connections from others. All of these, together with my own 4 outputs collected here by mc.receive~, if used, are collected and panned with the IEM Multiencoders before being sent out of the 16.1 Studio 1 Genelecs"
+					"patching_rect" : [ 7.0, 33.0, 524.0, 114.0 ],
+					"text" : "The main idea: People use Dante directly, go analogue into the ADCs of the Andiamo, or use the Focusrite Dante preamps. All of these are routed in Dante Controller to my machine (if using my improv patch there) or another machine (if routing my improv outputs to that via Dante). \n\nDante inputs on the routing machine are as follows: 1-32: Andiamo; 33-40: Preamps; 41-48: Dante connections from others. All of these, together with my own 4 outputs collected here by mc.receive~, if used, are collected and panned with the IEM Multiencoders before being sent out of the 16.1 Studio 1 Genelec 8030As."
 				}
 
 			}
