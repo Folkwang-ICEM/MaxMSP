@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 329.0, 180.0, 1471.0, 973.0 ],
+		"rect" : [ 329.0, 180.0, 1423.0, 935.0 ],
 		"openinpresentation" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
 		"toolbarvisible" : 0,
@@ -22,7 +22,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 917.0, 201.0, 87.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 932.0, 249.0, 87.0, 20.0 ],
+					"presentation_rect" : [ 902.0, 249.0, 87.0, 20.0 ],
 					"text" : "mde receive~s"
 				}
 
@@ -37,7 +37,7 @@
 					"patching_rect" : [ 11.0, 575.0, 114.0, 60.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 16.0, 357.0, 150.0, 47.0 ],
+					"presentation_rect" : [ 16.0, 370.0, 150.0, 47.0 ],
 					"text" : "NB if you don't see all the inputs when you open, make sure the dac~ is on"
 				}
 
@@ -50,9 +50,9 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 94.0, 889.0, 24.0, 24.0 ],
+					"patching_rect" : [ 94.0, 859.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 151.0, 660.0, 24.0, 24.0 ],
+					"presentation_rect" : [ 151.0, 673.0, 24.0, 24.0 ],
 					"svg" : ""
 				}
 
@@ -253,7 +253,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 622.0, 808.0, 136.0, 47.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 594.0, 515.0, 199.0, 47.0 ],
+					"presentation_rect" : [ 594.0, 528.0, 199.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.gain~",
@@ -346,7 +346,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 675.0, 769.0, 199.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 594.0, 488.0, 199.0, 20.0 ],
+					"presentation_rect" : [ 594.0, 501.0, 199.0, 20.0 ],
 					"text" : "cheap stereo monitor mix, if needed"
 				}
 
@@ -399,7 +399,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 154.0, 712.0, 383.0, 167.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 182.0, 474.0, 383.0, 167.0 ],
+					"presentation_rect" : [ 182.0, 487.0, 383.0, 167.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "mc.live.gain~[1]",
@@ -430,7 +430,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 548.0, 326.0, 232.0, 83.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 574.0, 316.0, 232.0, 83.0 ],
+					"presentation_rect" : [ 574.0, 328.0, 232.0, 83.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "mc.live.gain~",
@@ -438,14 +438,14 @@
 							"parameter_mmin" : -70.0,
 							"parameter_modmode" : 3,
 							"parameter_osc_name" : "<default>",
-							"parameter_shortname" : "mc.live.gain~",
+							"parameter_shortname" : "preamps",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4
 						}
 
 					}
 ,
-					"varname" : "mc.live.gain~"
+					"varname" : "preamps"
 				}
 
 			}
@@ -458,7 +458,7 @@
 					"outlettype" : [ "float" ],
 					"patching_rect" : [ 1177.0, 273.0, 159.0, 41.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1117.0, 273.0, 159.0, 41.0 ]
+					"presentation_rect" : [ 1087.0, 273.0, 237.0, 144.0 ]
 				}
 
 			}
@@ -471,7 +471,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1188.0, 495.0, 35.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1179.0, 410.0, 35.0, 22.0 ],
+					"presentation_rect" : [ 1149.0, 423.0, 35.0, 22.0 ],
 					"text" : "open"
 				}
 
@@ -635,7 +635,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1221.0, 201.0, 112.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1141.0, 249.0, 112.0, 20.0 ],
+					"presentation_rect" : [ 1144.0, 249.0, 112.0, 20.0 ],
 					"text" : "further dante inputs"
 				}
 
@@ -661,7 +661,7 @@
 					"outlettype" : [ "float" ],
 					"patching_rect" : [ 182.0, 273.0, 284.0, 85.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 182.0, 273.0, 284.0, 85.0 ]
+					"presentation_rect" : [ 182.0, 273.0, 284.0, 144.0 ]
 				}
 
 			}
@@ -674,7 +674,7 @@
 					"outlettype" : [ "float" ],
 					"patching_rect" : [ 574.0, 273.0, 159.0, 41.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 574.0, 273.0, 232.0, 41.0 ]
+					"presentation_rect" : [ 574.0, 273.0, 232.0, 55.0 ]
 				}
 
 			}
@@ -686,7 +686,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 78.0, 660.0, 58.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 112.0, 447.0, 58.0, 20.0 ],
+					"presentation_rect" : [ 112.0, 460.0, 58.0, 20.0 ],
 					"text" : "decoder"
 				}
 
@@ -699,7 +699,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 69.0, 537.0, 58.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 62.0, 411.0, 58.0, 20.0 ],
+					"presentation_rect" : [ 62.0, 424.0, 58.0, 20.0 ],
 					"text" : "encoders"
 				}
 
@@ -713,7 +713,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 874.0, 496.0, 35.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 884.0, 410.0, 35.0, 22.0 ],
+					"presentation_rect" : [ 854.0, 423.0, 35.0, 22.0 ],
 					"text" : "open"
 				}
 
@@ -878,7 +878,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 593.0, 495.0, 35.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 574.0, 410.0, 35.0, 22.0 ],
+					"presentation_rect" : [ 574.0, 423.0, 35.0, 22.0 ],
 					"text" : "open"
 				}
 
@@ -1043,7 +1043,7 @@
 					"outlettype" : [ "float" ],
 					"patching_rect" : [ 884.0, 269.0, 141.0, 47.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 884.0, 273.0, 184.0, 41.0 ]
+					"presentation_rect" : [ 854.0, 273.0, 221.0, 144.0 ]
 				}
 
 			}
@@ -1154,7 +1154,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 271.0, 616.0, 35.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 182.0, 446.0, 35.0, 22.0 ],
+					"presentation_rect" : [ 182.0, 459.0, 35.0, 22.0 ],
 					"text" : "open"
 				}
 
@@ -1277,7 +1277,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 183.0, 493.0, 35.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 182.0, 410.0, 35.0, 22.0 ],
+					"presentation_rect" : [ 182.0, 423.0, 35.0, 22.0 ],
 					"text" : "open"
 				}
 
@@ -1303,9 +1303,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 154.0, 927.0, 54.0, 22.0 ],
+					"patching_rect" : [ 154.0, 897.0, 54.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 182.0, 661.0, 54.0, 22.0 ],
+					"presentation_rect" : [ 182.0, 674.0, 54.0, 22.0 ],
 					"text" : "mc.dac~"
 				}
 
@@ -1319,7 +1319,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 77.0, 447.0, 31.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 135.0, 410.0, 31.0, 22.0 ],
+					"presentation_rect" : [ 135.0, 423.0, 31.0, 22.0 ],
 					"text" : "plug"
 				}
 
@@ -1924,7 +1924,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
-					"midpoints" : [ 103.5, 924.0, 163.5, 924.0 ],
+					"midpoints" : [ 103.5, 894.0, 163.5, 894.0 ],
 					"source" : [ "obj-51", 0 ]
 				}
 
@@ -2024,7 +2024,7 @@
 			"obj-31" : [ "mcs.vst~[2]", "mcs.vst~[2]", 0 ],
 			"obj-34" : [ "mcs.vst~[3]", "mcs.vst~[3]", 0 ],
 			"obj-45" : [ "mcs.vst~[4]", "mcs.vst~[4]", 0 ],
-			"obj-47" : [ "mc.live.gain~", "mc.live.gain~", 0 ],
+			"obj-47" : [ "mc.live.gain~", "preamps", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
 					"index" : 0,
