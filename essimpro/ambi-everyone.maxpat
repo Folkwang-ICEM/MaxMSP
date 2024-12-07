@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 412.0, 180.0, 1471.0, 973.0 ],
+		"rect" : [ 329.0, 180.0, 1471.0, 973.0 ],
 		"openinpresentation" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
 		"toolbarvisible" : 0,
@@ -36,8 +36,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 11.0, 575.0, 114.0, 60.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 4,
-					"presentation_rect" : [ 56.0, 438.0, 114.0, 60.0 ],
+					"presentation_linecount" : 3,
+					"presentation_rect" : [ 16.0, 357.0, 150.0, 47.0 ],
 					"text" : "NB if you don't see all the inputs when you open, make sure the dac~ is on"
 				}
 
@@ -52,7 +52,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 94.0, 889.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 151.0, 720.0, 24.0, 24.0 ],
+					"presentation_rect" : [ 151.0, 660.0, 24.0, 24.0 ],
 					"svg" : ""
 				}
 
@@ -64,8 +64,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 325.0, 583.0, 238.0, 22.0 ],
-					"text" : "read ambi-everyone-multiencoder-andiamo"
+					"patching_rect" : [ 325.0, 583.0, 201.0, 22.0 ],
+					"text" : "read .ambi-everyone-simpledecoder"
 				}
 
 			}
@@ -76,8 +76,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 324.0, 619.0, 239.0, 22.0 ],
-					"text" : "write ambi-everyone-multiencoder-andiamo"
+					"patching_rect" : [ 324.0, 619.0, 202.0, 22.0 ],
+					"text" : "write .ambi-everyone-simpledecoder"
 				}
 
 			}
@@ -253,7 +253,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 622.0, 808.0, 136.0, 47.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 594.0, 575.0, 199.0, 47.0 ],
+					"presentation_rect" : [ 594.0, 515.0, 199.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.gain~",
@@ -326,7 +326,7 @@
 
 							}
  ],
-						"originid" : "pat-16"
+						"originid" : "pat-8"
 					}
 ,
 					"patching_rect" : [ 154.0, 615.0, 39.0, 22.0 ],
@@ -346,7 +346,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 675.0, 769.0, 199.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 594.0, 548.0, 199.0, 20.0 ],
+					"presentation_rect" : [ 594.0, 488.0, 199.0, 20.0 ],
 					"text" : "cheap stereo monitor mix, if needed"
 				}
 
@@ -399,7 +399,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 154.0, 712.0, 383.0, 167.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 182.0, 534.0, 383.0, 167.0 ],
+					"presentation_rect" : [ 182.0, 474.0, 383.0, 167.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "mc.live.gain~[1]",
@@ -686,7 +686,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 78.0, 660.0, 58.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 112.0, 507.0, 58.0, 20.0 ],
+					"presentation_rect" : [ 112.0, 447.0, 58.0, 20.0 ],
 					"text" : "decoder"
 				}
 
@@ -1154,7 +1154,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 271.0, 616.0, 35.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 182.0, 506.0, 35.0, 22.0 ],
+					"presentation_rect" : [ 182.0, 446.0, 35.0, 22.0 ],
 					"text" : "open"
 				}
 
@@ -1323,7 +1323,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 154.0, 927.0, 54.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 182.0, 721.0, 54.0, 22.0 ],
+					"presentation_rect" : [ 182.0, 661.0, 54.0, 22.0 ],
 					"text" : "mc.dac~"
 				}
 
@@ -2033,7 +2033,7 @@
 
 			}
  ],
-		"originid" : "pat-14",
+		"originid" : "pat-6",
 		"parameters" : 		{
 			"obj-10" : [ "mcs.vst~[1]", "mcs.vst~[1]", 0 ],
 			"obj-2" : [ "mc.live.gain~[1]", "mc.live.gain~[1]", 0 ],
