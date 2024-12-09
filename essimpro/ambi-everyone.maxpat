@@ -31,7 +31,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 762.0, 126.0, 834.0, 249.0 ],
+						"rect" : [ 772.0, 94.0, 834.0, 249.0 ],
 						"gridsize" : [ 15.0, 15.0 ],
 						"toolbarvisible" : 0,
 						"boxes" : [ 							{
@@ -306,7 +306,7 @@
 
 							}
  ],
-						"originid" : "pat-1570"
+						"originid" : "pat-6"
 					}
 ,
 					"patching_rect" : [ 1032.0, 697.0, 69.0, 22.0 ],
@@ -403,7 +403,7 @@
 
 							}
  ],
-						"originid" : "pat-1572"
+						"originid" : "pat-8"
 					}
 ,
 					"patching_rect" : [ 1032.0, 658.0, 103.0, 22.0 ],
@@ -729,7 +729,7 @@
 
 							}
  ],
-						"originid" : "pat-1574"
+						"originid" : "pat-10"
 					}
 ,
 					"patching_rect" : [ 154.0, 615.0, 39.0, 22.0 ],
@@ -2418,7 +2418,7 @@
 
 			}
  ],
-		"originid" : "pat-1568",
+		"originid" : "pat-4",
 		"parameters" : 		{
 			"obj-10" : [ "mcs.vst~[1]", "mcs.vst~[1]", 0 ],
 			"obj-2" : [ "mc.live.gain~[1]", "mc.live.gain~[1]", 0 ],
