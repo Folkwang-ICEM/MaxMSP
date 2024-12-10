@@ -669,7 +669,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 622.0, 808.0, 136.0, 47.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 594.0, 528.0, 199.0, 47.0 ],
+					"presentation_rect" : [ 594.0, 536.0, 199.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.gain~",
@@ -677,14 +677,13 @@
 							"parameter_mmin" : -70.0,
 							"parameter_modmode" : 3,
 							"parameter_osc_name" : "<default>",
-							"parameter_shortname" : "live.gain~",
+							"parameter_shortname" : "ambi5th->stereo",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4
 						}
 
 					}
-,
-					"varname" : "live.gain~"
+
 				}
 
 			}
@@ -757,13 +756,15 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-18",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 675.0, 769.0, 199.0, 20.0 ],
+					"patching_rect" : [ 675.0, 769.0, 199.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 594.0, 501.0, 199.0, 20.0 ],
-					"text" : "cheap stereo monitor mix, if needed"
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 594.0, 503.0, 199.0, 33.0 ],
+					"text" : "cheap stereo monitor mix, if needed (andiamo 31+32 out)"
 				}
 
 			}
@@ -823,7 +824,7 @@
 							"parameter_mmin" : -70.0,
 							"parameter_modmode" : 3,
 							"parameter_osc_name" : "<default>",
-							"parameter_shortname" : "mc.live.gain~[1]",
+							"parameter_shortname" : "master (to speakers via andiamo)",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4
 						}
@@ -2460,8 +2461,8 @@
 		"originid" : "pat-6",
 		"parameters" : 		{
 			"obj-10" : [ "mcs.vst~[1]", "mcs.vst~[1]", 0 ],
-			"obj-2" : [ "mc.live.gain~[1]", "mc.live.gain~[1]", 0 ],
-			"obj-21" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-2" : [ "mc.live.gain~[1]", "master (to speakers via andiamo)", 0 ],
+			"obj-21" : [ "live.gain~", "ambi5th->stereo", 0 ],
 			"obj-3" : [ "mcs.vst~", "mcs.vst~", 0 ],
 			"obj-31" : [ "mcs.vst~[2]", "mcs.vst~[2]", 0 ],
 			"obj-34" : [ "mcs.vst~[3]", "mcs.vst~[3]", 0 ],
